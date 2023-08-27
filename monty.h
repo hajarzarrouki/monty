@@ -89,6 +89,7 @@ void _nop(stack_t **doubly, unsigned int cline);
 void _sub(stack_t **doubly, unsigned int cline);
 void _div(stack_t **doubly, unsigned int cline);
 void _mul(stack_t **head, unsigned int counter);
+void _mod(stack_t **head, unsigned int counter);
 
 
 /* String functions*/
