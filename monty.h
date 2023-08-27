@@ -77,13 +77,15 @@ void free_list(stack_t *head);
 /* File Check */
 FILE *check_input(int argc, char *argv[]);
 
-void free_global_var(void);
 
 /* opcode_instructuions */
 void _push(stack_t **stack, unsigned int line_number);
 void _pall(stack_t **stack, unsigned int line_number);
 void _pint(stack_t **doubly, unsigned int cline);
 void _pop(stack_t **doubly, unsigned int cline);
+void _swap(stack_t **doubly, unsigned int cline);
+
+
 
 /* String functions*/
 int _strcmp(char *s1, char *s2);
@@ -92,5 +94,6 @@ int _sch(char *s, char c);
 
 /* global variable */
 void start_g_var(FILE *fd);
+void free_global_var(void);
 
 #endif
