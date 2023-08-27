@@ -27,3 +27,15 @@ void _add(stack_t **doubly, unsigned int cline)
 	aux->n += (*doubly)->n;
 	_pop(doubly, cline);
 }
+
+/**
+ * _nop - Nope doesn't do anythinhg
+ *
+ * @doubly: head of the linked list
+ * @cline: line number
+ */
+void _nop(stack_t **doubly, unsigned int cline)
+{
+	(void)doubly;
+	(void)cline;
+}
