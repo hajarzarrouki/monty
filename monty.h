@@ -83,6 +83,7 @@ void free_global_var(void);
 void _push(stack_t **stack, unsigned int line_number);
 void _pall(stack_t **stack, unsigned int line_number);
 void _pint(stack_t **doubly, unsigned int cline);
+void _pop(stack_t **doubly, unsigned int cline);
 
 /* String functions*/
 int _strcmp(char *s1, char *s2);
