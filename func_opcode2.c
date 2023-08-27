@@ -35,3 +35,25 @@ void _mod(stack_t **head, unsigned int counter)
 	*head = h->next;
 	free(h);
 }
+/**
+ * _pchar - print the char value of the first element
+ *
+ * @doubly: head of the linked list
+ * @cline: line number
+ */
+void _pchar(stack_t **doubly, unsigned int cline)
+{
+	if (doubly == NULL || *doubly == NULL)
+	{
+		dprintf(2, "L%u: can't pchar, stack empty\n", cline);
+		free_global_var();
+		exit(EXIT_FAILURE);
+	}
+	if ((*doubly)->n < 0 || (*doubly)->n >= 128)
+	{
+		dprintf(2, "L%u: can't pchar, value out of range\n", cline);
+		free_global_var();
+		exit(EXIT_FAILURE);
+	}
+	printf("%c\n", (*doubly)->n);
+}
